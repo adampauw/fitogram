@@ -114,29 +114,22 @@ class App extends Component {
         <body className="App-body">
         {
           this.state.events.map(event => (
-            <div class='courses'>
-              <div class='course-img'>
+
+            <div className="grid-container">
+              <div className="image">
                 <img src={event.imageUrl} className="App-logo" alt="logo" />
               </div>
-              <div id='practice-text'>
-                <div class='course-mid'>
-                  <div id="table">
-                    <div class="tr">
-                      <div class="td">Mo. 08 Sep. 2017</div>
-                      <div class="td">Ashtanga Yoga</div>
-                    </div>
-                    <div class="tr">
-                      <div class="td">Wechselnde</div>
-                      <div class="td">Clarrisa Biskupic</div>
-                    </div>
-                  </div>
-                </div>
-                <div class='course-right'>
-                  <button type="button">Zür Bechtung</button>
-                </div>
+              <div className="details">
+                <span>details</span>
               </div>
-              <div class='description'>
-                <p>Yoga für Einsteiger: Sie haben bisher keine oder wenig Erfahrung mit Yoga? Kein Problem und herzlich Wilkommen</p>
+              <div className="description">
+                <span>description</span>
+              </div>
+              <div className="date">
+                <span>date</span>
+              </div>
+              <div className="button">
+                <button>Zür Burchung</button>
               </div>
             </div>
           ))

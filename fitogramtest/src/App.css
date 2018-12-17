@@ -26,42 +26,33 @@
 
 /* ---------------Courses/Classes--------------- */
 
-.courses {
-  display: flex;
-  padding: 1%;
-  margin: 1%;
-  width: 100%
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-template-areas: "image details ." "image details button" "image description date";
+  width: 100%;
+  height: 13rem;
 }
 
-.course-img {
-  width: 40%;
+.image { 
+  grid-area: image; 
 }
 
-.practice-text {
-  width: 60%;
+.details { 
+  grid-area: details;
 }
 
-.course-mid {
-  display: inline-flex;
-  
+.description { 
+  grid-area: description; 
 }
 
-.info {
-  list-style-type: none;
-  display: table; 
+.date { 
+  grid-area: date; 
 }
 
-.tr {
-    display: table-row; 
-}
-
-.td {
-    display: table-cell; 
-    padding: 10%;
-}
-
-.course-right {
-  width: 20%;
+.button { 
+  grid-area: button; 
 }
 
 button {
@@ -69,12 +60,3 @@ button {
   color: white;
   border: none;
 }
-
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
