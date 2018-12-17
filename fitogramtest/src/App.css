@@ -1,3 +1,5 @@
+
+/* ---------------Application--------------- */
 .App {
   text-align: center;
 }
@@ -22,12 +24,51 @@
   color: #61dafb;
 }
 
+/* ---------------Courses/Classes--------------- */
+
 .courses {
   display: flex;
   padding: 1%;
   margin: 1%;
+  width: 100%
 }
 
+.course-img {
+  width: 40%;
+}
+
+.practice-text {
+  width: 60%;
+}
+
+.course-mid {
+  display: inline-flex;
+  
+}
+
+.info {
+  list-style-type: none;
+  display: table; 
+}
+
+.tr {
+    display: table-row; 
+}
+
+.td {
+    display: table-cell; 
+    padding: 10%;
+}
+
+.course-right {
+  width: 20%;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+}
 
 /* @keyframes App-logo-spin {
   from {

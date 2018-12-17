@@ -4,6 +4,7 @@ import './App.css';
 
 class App extends Component {
   constructor() {
+    super();
     this.state = {
       events: [
           {
@@ -114,17 +115,32 @@ class App extends Component {
         {
           this.state.events.map(event => (
             <div class='courses'>
-            <img src={event.imageUrl} className="App-logo" alt="logo" />
-              <div id='practice-text'>
-                <h2>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</h2>
-                <p>"Vivamus sagittis lacus vel augue laoreet rutrum faucibus     dolor auctor. Integer posuere erat a ante venenatis dapibus     posuere velit aliquet. Praesent commodo cursus magna, vel   scelerisque nisl consectetur et."</p>
-                <span>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</span>
+              <div class='course-img'>
+                <img src={event.imageUrl} className="App-logo" alt="logo" />
               </div>
-          </div>
+              <div id='practice-text'>
+                <div class='course-mid'>
+                  <div id="table">
+                    <div class="tr">
+                      <div class="td">Mo. 08 Sep. 2017</div>
+                      <div class="td">Ashtanga Yoga</div>
+                    </div>
+                    <div class="tr">
+                      <div class="td">Wechselnde</div>
+                      <div class="td">Clarrisa Biskupic</div>
+                    </div>
+                  </div>
+                </div>
+                <div class='course-right'>
+                  <button type="button">Zür Bechtung</button>
+                </div>
+              </div>
+              <div class='description'>
+                <p>Yoga für Einsteiger: Sie haben bisher keine oder wenig Erfahrung mit Yoga? Kein Problem und herzlich Wilkommen</p>
+              </div>
+            </div>
           ))
         }
-        <header className="App-header"></header>
-        <body className="App-body">
         </body>
       </div>
     );
