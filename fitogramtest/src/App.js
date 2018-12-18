@@ -115,21 +115,30 @@ class App extends Component {
         {
           this.state.events.map(event => (
 
-            <div className="grid-container">
-              <div className="image">
-                <img src={event.imageUrl} className="App-logo" alt="logo" />
+            <div class="grid-container">
+              <div class="image">
+                <img src={event.imageUrl} className="App-logo" alt="logo" /> 
               </div>
-              <div className="details">
+              <div className="detail-1">
+                <span>time</span> 
+              </div>
+              <div className="detail-2">
+                <span>details</span>
+              </div>
+              <div className="detail-3">
+                <span>details</span>
+              </div>
+              <div className="detail-4">
                 <span>details</span>
               </div>
               <div className="description">
-                <span>description</span>
-              </div>
-              <div className="date">
-                <span>date</span>
+                <span>details</span>
               </div>
               <div className="button">
-                <button>Zür Burchung</button>
+                <button>Zür Buchung</button>
+              </div>
+              <div className="place">
+                <span>Place</span>
               </div>
             </div>
           ))
