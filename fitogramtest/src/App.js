@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import img from './yoga-mnt.jpg';
 import './App.css';
 
@@ -140,7 +139,7 @@ class App extends Component {
                 </ul>
               </div>
               <div className="detail-4 all-det">
-              <ul>
+                <ul>
                   <li>Clarissa</li>
                   <li>Biskupic</li>
                 </ul>
