@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import img from './yoga-mnt.jpg';
 import './App.css';
 
 class App extends Component {
@@ -115,30 +116,46 @@ class App extends Component {
         {
           this.state.events.map(event => (
 
-            <div class="grid-container">
-              <div class="image">
-                <img src={event.imageUrl} className="App-logo" alt="logo" /> 
+            <div className="grid-container">
+              <div className="image">
+                <img src={img} alt="Yoga" />
+                <span id="centered-text">Yoga Class</span>
               </div>
-              <div className="detail-1">
-                <span>time</span> 
+              <div className="detail-1 all-det">
+                <ul>
+                  <li id="bold">Mo. 08 Sep. 2017</li>
+                  <li>12:00 - 13:00</li>
+                </ul>
               </div>
-              <div className="detail-2">
-                <span>details</span>
+              <div className="detail-2 all-det">
+               <ul>
+                  <li>Ashtanga Yoga</li>
+                  <li>Anfanger</li>
+                </ul>
               </div>
-              <div className="detail-3">
-                <span>details</span>
+              <div className="detail-3 all-det">
+                <ul>
+                  <li>Wechselnde</li>
+                  <li>Standorte</li>
+                </ul>
               </div>
-              <div className="detail-4">
-                <span>details</span>
+              <div className="detail-4 all-det">
+              <ul>
+                  <li>Clarissa</li>
+                  <li>Biskupic</li>
+                </ul>
               </div>
-              <div className="description">
-                <span>details</span>
+              <div className="description all-det">
+                <span>Yoga für Einsteiger: sie haben bischer keine oder wenig Ehrfahrung mit yoga? Kein problem und herlich<a href='#'>..more</a></span>
               </div>
-              <div className="button">
+              <div className="button all-det">
                 <button>Zür Buchung</button>
               </div>
-              <div className="place">
-                <span>Place</span>
+              <div className="place all-det">
+                <ul>
+                  <li>Buchung bis:</li>
+                  <li>Do. 10 Sept 2018 - 09:00Uhr</li>
+                </ul>
               </div>
             </div>
           ))

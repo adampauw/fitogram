@@ -4,10 +4,12 @@
   text-align: center;
 }
 
-.App-logo {
+
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 30vmin;
-}
+} */
 
 .App-body {
   background-color: #282c34;
@@ -32,7 +34,7 @@
   grid-template-columns: 40% 20% 20% 20%;
   grid-template-rows: 33.333% 33.333% 33.333%;
   grid-template-areas: "Image Detail-1 Detail-2 ." "Image Detail-3 Detail-4 Button" "Image Description Description Place";
-  width: 100%;
+  width: 90%;
   height: 15rem;
   background-color: cadetblue;
   
@@ -41,10 +43,27 @@
 .image { 
   grid-area: Image;
   background-color: indianred;
+  position: relative;
+  text-align: center;
 }
 
+.image img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+#centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: xx-large;
+}
+
+/* ---------------Details--------------- */
+
 .detail-1 {
-  grid-area: Detail-1; 
+  grid-area: Detail-1;
 }
 
 .detail-2 { 
@@ -71,8 +90,31 @@
   grid-area: Place; 
 }
 
+.all-det li, span {
+  list-style-type: none;
+  font-family: monospace;
+  font-size: large;
+}
+
+#bold {
+  font-weight: 600;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:visited {
+  color: orange;
+}
+
 button {
   background-color: orange;
   color: white;
+  font-size: smaller;
   border: none;
+  width: 60%;
+  height: 40%;
+  border-radius: 0.5rem;
 }
